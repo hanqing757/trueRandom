@@ -1,0 +1,20 @@
+{
+    "name":"luffy/randomizer",
+    "type":"library",
+    "description":"get random data from random.org",
+    "keywords":["random"],
+    "authors":[
+        {
+            "name":"Qing Han",
+            "email":"hanqing002@ke.com"
+        }
+    ],
+    "require":{
+        "guzzlehttp/guzzle" : "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "luffy": "src/"
+        }
+    }
+}
