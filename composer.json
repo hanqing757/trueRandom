@@ -10,7 +10,8 @@
         }
     ],
     "require":{
-        "guzzlehttp/guzzle" : "*"
+        "guzzlehttp/guzzle" : "*",
+        "php" : ">=5.3.2"
     },
     "autoload": {
         "psr-0": {
