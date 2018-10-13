@@ -12,6 +12,12 @@
     "require":{
         "guzzlehttp/guzzle" : "^6.3"
     },
+    "repositories":{
+         "packagist": {
+                "type": "composer",
+                "url": "https://packagist.phpcomposer.com"
+            }
+    },
     "autoload": {
         "psr-0": {
             "luffy": "src/"
