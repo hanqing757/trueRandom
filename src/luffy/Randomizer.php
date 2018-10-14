@@ -2,7 +2,7 @@
 
 namespace luffy\random;
 
-include_once __DIR__.'/vendor/autoload.php';
+include_once __DIR__ . '/../..'.'/vendor/autoload.php';
 
 class Randomizer{
 	//请求接口

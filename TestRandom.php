@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Randomizer.php';
+require_once __DIR__ . '/src/luffy/Randomizer.php';
 use  luffy\random\Randomizer;
 
 $rnd=new Randomizer('449c131f-0171-401e-80c9-xxxxxxxx');
