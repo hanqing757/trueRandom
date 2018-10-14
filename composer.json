@@ -18,6 +18,7 @@
                 "url": "https://packagist.phpcomposer.com"
             }
     },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-0": {
             "luffy": "src/"
