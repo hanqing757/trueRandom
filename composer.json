@@ -10,7 +10,7 @@
         }
     ],
     "require":{
-        "guzzlehttp/guzzle" : "*"
+        "guzzlehttp/guzzle" : "^6.3"
     },
     "repositories":{
          "packagist": {
