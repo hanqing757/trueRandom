@@ -1,6 +1,6 @@
 <?php
 
-namespace random;
+namespace luffy\random;
 
 class Randomizer{
 	//请求接口

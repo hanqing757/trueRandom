@@ -20,8 +20,8 @@
     },
     "minimum-stability": "stable",
     "autoload": {
-        "psr-0": {
-            "random": "src/"
+        "psr-4": {
+            "luffy\\": "src/"
         }
     }
 }
