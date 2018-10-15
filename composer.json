@@ -21,7 +21,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-0": {
-            "luffy": "src/"
+            "random": "src/"
         }
     }
 }

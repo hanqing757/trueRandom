@@ -1,8 +1,6 @@
 <?php
 
-namespace luffy\random;
-
-include_once __DIR__ . '/../..'.'/vendor/autoload.php';
+namespace random;
 
 class Randomizer{
 	//请求接口
