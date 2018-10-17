@@ -19,11 +19,11 @@ $generator=new Randomizer('449c131f-0171-401e-80c9-xxxxxxxxx'); //参数是你�
 ```
 $generator->integers($quantity,$min,$max,$base=10,$replacement=true)
 ```
-返回一个对象
+返回一个数组
 ```
-object(stdClass)#17 (5) {
+array(5) {
   ["random"]=>
-  object(stdClass)#30 (2) {
+  array(2) {
     ["data"]=>
     array(10) {
       [0]=>
@@ -60,9 +60,9 @@ object(stdClass)#17 (5) {
   int(1420)
 }
 ```
-出错时返回如下对象，比如$base出错
+出错时返回如下，比如$base出错
 ```
-object(stdClass)#30 (3) {
+array(3) {
   ["code"]=>
   int(201)
   ["message"]=>

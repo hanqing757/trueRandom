@@ -1,5 +1,4 @@
 <?php
-
 namespace luffy\random;
 
 class Randomizer{
@@ -34,12 +33,12 @@ class Randomizer{
 		$code=$res->getStatusCode();
 		$ret=$res->getBody();
 		$this->id++;
-		$data=json_decode($ret->getContents());
+		$data=json_decode($ret->getContents(),true);
 		if($code==200){
-			if(isset($data->result)){
-				return $data->result;
+			if(isset($data['result'])){
+				return $data['result'];
 			}else{
-				return $data->error;
+				return $data['error'];
 			}
 		}else{
 			return $data;
