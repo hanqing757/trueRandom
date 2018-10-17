@@ -20,7 +20,27 @@ class Randomizer{
 		}
 		$this->client=new \GuzzleHttp\Client();
 	}
-	//
+	//拼接数据
+	public function getResData($data){
+		$arr=[
+			  'errno'=>0,
+			  'error'=>'success',
+			  'data'=>isset($data['random']) ? $data['random']['data'] : $data    //随机数获取和usage获取
+			];
+		return $arr;
+	}
+
+	//拼接错误数据
+	public function getErrResData($data){
+		$arr=[
+			'errno'=>$data['code'],
+			'error'=>$data['message'],
+			'data'=>null
+		];
+		return $arr;
+	}
+
+
 	public function get_rst($method,$params){
 		$params['apiKey']=$this->apikey;
 		$body=array(
@@ -34,11 +54,12 @@ class Randomizer{
 		$ret=$res->getBody();
 		$this->id++;
 		$data=json_decode($ret->getContents(),true);  //第二个参数为true返回array
+
 		if($code==200){
 			if(isset($data['result'])){
-				return $data['result'];
+				return $this->getResData($data['result']);
 			}else{
-				return $data['error'];
+				return $this->getErrResData($data['error']);
 			}
 		}else{
 			return $data;
