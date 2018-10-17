@@ -33,7 +33,7 @@ class Randomizer{
 		$code=$res->getStatusCode();
 		$ret=$res->getBody();
 		$this->id++;
-		$data=json_decode($ret->getContents(),true);
+		$data=json_decode($ret->getContents(),true);  //第二个参数为true返回array
 		if($code==200){
 			if(isset($data['result'])){
 				return $data['result'];
